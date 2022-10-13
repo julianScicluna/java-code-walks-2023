@@ -4,9 +4,7 @@ This year we will be learning how to use a software application that provides ri
 
 ## Hello Visual Studio Code
 
-<div style="text-align:center">
 ![Alt Text](https://www.dataquest.io/wp-content/uploads/2022/03/visual-studio-code.png)
-</div>
 
 Microsoft Visual Studio (VS) Code is a free coding editor that can be used for coding in *any* programming language and we are going to use it to continue to learn how to program in Java. 
 
@@ -21,6 +19,4 @@ I certainly loves it and to me it feels like home. To learn more about how to se
 - Highlight a few productivity features.
 - Run a very simple program in the IDE.
 
-<div style="text-align:center">
 ![Alt Text](https://c.tenor.com/ihS0L_QrTu8AAAAC/level-up.gif)
-</div>
