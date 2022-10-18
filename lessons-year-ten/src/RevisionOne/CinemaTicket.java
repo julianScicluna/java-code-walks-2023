@@ -11,15 +11,19 @@ public class CinemaTicket {
     public static void main(String[] args) {
         // Declaration of constants to store the prices
         final double ADULT_PRICE = 11.50;
-        // TODO: Declare CHILD_PRICE
+        // Declare CHILD_PRICE
+        final double CHILD_PRICE = 5.50;
         
-        // TODO: Declare variable ageIn to store the age of the user
+        // Declare variable ageIn to store the age of the user
+        int ageIn;
         
         // Display a user prompt for input
         System.out.println("Please enter your age:");
-        // TODO: Store the value of Keyboard.readInt() in ageIn
+        // Store the value of Keyboard.readInt() in ageIn
+        ageIn = Keyboard.readInt();
 
-        if (/* TODO: A conditional statement to check that customer age is less than 12*/) {
+        // A conditional statement to check whether ageIn is less than 12
+        if (ageIn < 12) {
             System.out.println("Child Ticket Price: $" + CHILD_PRICE);
         } else {
             System.out.println("Adult Ticket Price: $" + ADULT_PRICE);
