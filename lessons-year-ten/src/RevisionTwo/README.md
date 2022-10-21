@@ -14,7 +14,7 @@ The program will accept from the user an operator e.g. '+' and two numbers. Depe
 
 <b>Instructions:</b>
 - Create a new folder under the `src` folder named `RevisionTwo`.
-- Create a new file under `RevisionOne` and name it `SimpleCalculator.java`.
+- Create a new file under `RevisionTwo` and name it `SimpleCalculator.java`.
 - Copy the code of `SimpleCalculator.java`.
 - Work on all the commented tasks labelled as `TODO`.
 
