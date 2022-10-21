@@ -1,19 +1,50 @@
 package RevisionTwo;
 
+import Helpers.Keyboard;
+
 public class SimpleCalculator {
     public static void main(String[] args) {
-        // TODO: Declare a variable of type char named operator
+        // Declare a variable of type char named operator
+        char operator;
 
-        // TODO: Declare three double variables: number1, number2 and result
+        // Declare three double variables: number1, number2 and result
+        double number1, number2, result;
 
-        // TODO: Prompt user to enter an operator e.g.: +, -, * or /
+        // Prompt user to enter an operator e.g.: +, -, * or /
+        System.out.println("Enter an operator e.g.: +, -, * or /");
+        operator = Keyboard.readChar();
 
-        // TODO: Prompt user to enter number1 and number2
+        // Prompt user to enter number1 and number2
+        System.out.println("Enter number1:");
+        number1 = Keyboard.readDouble();
 
-        // TODO: Switch Case statement for operator
-        switch(/* operator */) {
+        System.out.println("Enter number2:");
+        number2 = Keyboard.readDouble();
+
+        // Switch Case statement for operator
+        switch(operator) {
             case '+': {
-                // TODO: Perform sum of numbers and display the result
+                // Perform sum of numbers and display the result
+                result = number1 + number2; // expression
+                System.out.println("The answer is: " + result);
+                break;
+            }
+            case '-': {
+                // Perform sum of numbers and display the result
+                result = number1 - number2; // expression
+                System.out.println("The answer is: " + result);
+                break;
+            }
+            case '*': {
+                // Perform sum of numbers and display the result
+                result = number1 * number2; // expression
+                System.out.println("The answer is: " + result);
+                break;
+            }
+            case '/': {
+                // Perform sum of numbers and display the result
+                result = number1 * number2; // expression
+                System.out.println("The answer is: " + result);
                 break;
             }
             default: {
