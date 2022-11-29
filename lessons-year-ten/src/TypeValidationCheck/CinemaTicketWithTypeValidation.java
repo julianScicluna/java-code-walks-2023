@@ -22,12 +22,16 @@ public class CinemaTicketWithTypeValidation {
         // Store the value of Keyboard.readInt() in ageIn
         try {
             ageIn = Keyboard.readInt();
-
-            // A conditional statement to check whether ageIn is less than 12
-            if (ageIn < 12) {
-                System.out.println("Child Ticket Price: $" + CHILD_PRICE);
+             
+            if (ageIn > 5) { // first I am checking that the age is greater than 5
+                // A conditional statement to check whether ageIn is less than 12
+                if (ageIn < 12) {
+                    System.out.println("Child Ticket Price: $" + CHILD_PRICE);
+                } else {
+                    System.out.println("Adult Ticket Price: $" + ADULT_PRICE);
+                }
             } else {
-                System.out.println("Adult Ticket Price: $" + ADULT_PRICE);
+                System.out.println("Sorry, very young children cannot get a ticket.");
             }
         } catch (NumberFormatException e) {
             // The program was going to crash... but we stopped it!
