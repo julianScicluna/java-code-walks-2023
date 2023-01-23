@@ -15,10 +15,26 @@ public class MysteryProgram2 {
         double area = 0;
         double perimeter = 0;
 
+        // validation
+        boolean inputIsValid = true;
+
         // ask the user to input the radius of a circle
-        System.out.print("Enter the radius (r) of a circle: ");
-        radius = Keyboard.readDouble();
-        System.out.println(""); // fresh line for neat display
+        do {
+            System.out.print("Enter the radius (r) of a circle: ");
+            try {
+                radius = Keyboard.readDouble();
+                if (radius < 0) {
+                    System.out.print("Sorry, something wrong with your input... try again.");
+                    inputIsValid = false;
+                } else {
+                    inputIsValid = true;
+                }
+            } catch (Exception e) {
+                System.out.print("Sorry, something wrong with your input... try again.");
+                inputIsValid = false;
+            }  
+            System.out.println(""); // fresh line for neat display
+        } while (!inputIsValid);
 
         // make all calculations
         area = calcAreaCircle(radius);
@@ -34,7 +50,7 @@ public class MysteryProgram2 {
      * using the formula PI * r * r
      **/
     public static double calcAreaCircle(double r) {
-        return 2 * PI * r;
+        return 2 * r * r;
     }
 
     /**
@@ -42,6 +58,6 @@ public class MysteryProgram2 {
      * using the formula 2 * PI * r
      **/
     public static double calcPerimeterCircle(double r) {
-        return PI * r * r;
+        return 2 * PI * r;
     }
 }
