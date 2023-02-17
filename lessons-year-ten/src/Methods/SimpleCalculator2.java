@@ -25,25 +25,18 @@ public class SimpleCalculator2 {
             // Switch Case statement for operator
             switch(operator) {
                 case '+': {
-                    // TODO: Place the code below in a method addTwoNumbers() and call it here
                     // Perform sum of numbers and display the result
-                    result = number1 + number2; // expression
-                    System.out.println("The answer is: " + result);
-                    
-                    break; // TODO: do not copy the break over to the method
+                    addTwoNumbers(number1, number2);
+                    break;
                 }
                 case '-': {
-                    // TODO: Place the code below in a method subTwoNumbers() and call it here
                     // Perform sum of numbers and display the result
-                    result = number1 - number2; // expression
-                    System.out.println("The answer is: " + result);
+                    subTwoNumbers(number1, number2);
                     break;
                 }
                 case '*': {
-                    // TODO: Place the code below in a method multiplyTwoNumbers() and call it here
-                    // Perform sum of numbers and display the result
-                    result = number1 * number2; // expression
-                    System.out.println("The answer is: " + result);
+                    // Perform multipiclation of numbers and display the result
+                    multiplyTwoNumbers(number1, number2);
                     break;
                 }
                 case '/': {
@@ -68,7 +61,18 @@ public class SimpleCalculator2 {
      * @param n1
      * @param n2
      */
-    public static void addTwoNumbers(int n1, int n2) {
-        // TODO: Copy and paste the code in the case here
+    public static void addTwoNumbers(double n1, double n2) {
+        double result = n1 + n2; // expression
+        System.out.println("The answer is: " + result);
+    }
+
+    public static void subTwoNumbers(double n1, double n2) {
+        double result = n1 - n2;
+        System.out.println("The answer is: " + result);
+    }
+
+    public static void multiplyTwoNumbers(double n1, double n2) {
+        double result = n1 * n2;
+        System.out.println("The answer is: " + result);
     }
 }
