@@ -27,6 +27,8 @@ public class NumberArray {
         }
 
         // todo: sum of myRealNumbers
+        double mySum = sum(myRealNumbers);
+        System.out.println("mySum: " + mySum);
 
         // todo: average
 
@@ -38,8 +40,13 @@ public class NumberArray {
      * @param arr
      * @return
      */
-    public double sum(double[] arr) {
-        // todo: recurring total
+    public static double sum(double[] arr) {
+        // recurring total
+        double sum = 0;
+        for (int i = 0; i < arr.length; i++) {
+            sum = sum + arr[i];
+        }
+        return sum;
     }
 
     /**
@@ -48,7 +55,8 @@ public class NumberArray {
      * @param arr
      * @return
      */
-    public double[] sort(double[] arr) {
+    public static double[] sort(double[] arr) {
         // todo: return a sorted array
+        return null;
     }
 }
