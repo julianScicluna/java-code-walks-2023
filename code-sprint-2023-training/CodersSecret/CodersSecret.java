@@ -21,7 +21,6 @@ public class CodersSecret
         if (userChoice == 1) {
             // Introduce the rules of the game to the user
             System.out.println("We will ask you three questions to get a secret code. Will you manage to unlock the key?");
-            
         } else if (userChoice == 2) {
             // Make the user get the code
         
@@ -38,11 +37,16 @@ public class CodersSecret
     }
     
     // Functionality #2: Get Code
-    public static int askQuestions() {
+    public static int getCode() {
         int secretCode = 0;
         // todo: functions about the code
         return secretCode;
     }
     
-    // todo: create a method for 
-}
+    // Functionality #3: Secret
+    public static String checkSecret(int code) {
+        String message = "Incorrect code";
+        // todo: check secret
+        return message;
+    }
+ }
