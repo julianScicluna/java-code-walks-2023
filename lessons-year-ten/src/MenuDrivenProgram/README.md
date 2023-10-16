@@ -1,0 +1,3 @@
+# Coursework Example: A Menu-Driven Java Program
+
+The menu-driven program in Java is a program that displays a menu and then takes input from the user to choose an option from the displayed menu. The output is given by the program based on the option selected by the user. This type of program interacts a lot with the user, and hence, it is user-friendly. Writing a menu-driven program in Java could be an easy and suitable solution for the problem you will tackle in your coursework.
