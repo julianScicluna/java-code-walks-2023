@@ -4,9 +4,9 @@ import java.net.URI;
 import java.time.LocalTime;
 import java.time.format.DateTimeFormatter;
 
-import Helpers.Keyboard;
-
 import java.awt.Desktop;
+
+import Helpers.Keyboard;
 
 public class FootballStarsAcademy {
     
