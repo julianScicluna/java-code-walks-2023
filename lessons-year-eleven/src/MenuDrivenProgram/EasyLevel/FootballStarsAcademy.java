@@ -29,21 +29,45 @@ public class FootballStarsAcademy {
         System.out.println("1. Dribbling Exercise");
         System.out.println("2. Passes");
         System.out.println("3. Running");
+        System.out.println("4. Quit");
 
-        // TODO: Ask user to enter a choice
+        // Ask user to enter a choice
+        System.out.println("Please enter your choice [1, 2, 3 or 4 to Quit]: ");
+        int choice = Keyboard.readInt();
 
-        // TODO: When choice is for training ask the user to start an activity 
+        // When choice is for training ask the user to start an activity 
+        switch(choice) {
+            case 1: {
 
-        // TODO: When choice is for training stats display stats
+            }
+            case 2: {
 
+            }
+            case 3: {
+
+            }
+            case 4: {
+
+            }
+            default: {
+
+            }
+        }
         recordActivity("Dribble", "https://www.youtube.com/watch?v=jwIHc9rz7yo");
     }
 
     public static void dribblingExercise() {
-
+        // TODO: Code that will launch the dribbling exercise for the user
     }
 
-    
+    public static void passesExercise() {
+        // TODO: Code that will launch the passes exercise for the user
+    }
+
+    public static void runningExercise() {
+        // TODO: Code that will launch the running exercise for the user
+    }
+
     public static void recordActivity(String name, String activityUri) {
         LocalTime startTime = LocalTime.now();
         try 
