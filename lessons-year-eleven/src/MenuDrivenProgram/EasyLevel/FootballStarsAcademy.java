@@ -38,7 +38,15 @@ public class FootballStarsAcademy {
         // When choice is for training ask the user to start an activity 
         switch(choice) {
             case 1: {
-
+                System.out.println("Let us start your dribbling exercise...");
+                try {
+                    Thread.sleep(1000);
+                } catch(Exception e) {
+                    // if the program feels like it was going to crash
+                    // it will stop the crash and try to recover
+                    System.out.println("Sorry, something went wrong... but we can continue!");
+                }
+                dribblingExercise();
             }
             case 2: {
 
