@@ -1,11 +1,5 @@
 package MenuDrivenProgram.MediumLevel;
 
-import java.net.URI;
-import java.time.LocalTime;
-import java.time.format.DateTimeFormatter;
-import java.time.temporal.ChronoUnit;
-import java.awt.Desktop;
-
 import Helpers.Keyboard;
 
 public class FootballStarsAcademy {
@@ -49,6 +43,7 @@ public class FootballStarsAcademy {
                     System.out.println("Sorry, something went wrong... but we can continue!");
                 }
                 dribblingExercise();
+                break;
             }
             case 2: {
                 System.out.println("Let us start your passing exercise...");
@@ -60,6 +55,7 @@ public class FootballStarsAcademy {
                     System.out.println("Sorry, something went wrong... but we can continue!");
                 }
                 passesExercise();
+                break;
             }
             case 3: {
                 System.out.println("Let us start your passing exercise...");
@@ -71,9 +67,11 @@ public class FootballStarsAcademy {
                     System.out.println("Sorry, something went wrong... but we can continue!");
                 }
                 runningExercise();
+                break;
             }
             case 4: {
                 System.out.println("Keep up the good work. See you next time!");
+                break;
             }
             default: {
                 System.out.println("The option is invalid, so we are going to quit.");
@@ -82,47 +80,25 @@ public class FootballStarsAcademy {
     }
 
     public static void dribblingExercise() {
-        recordActivity("Dribble", "https://www.youtube.com/watch?v=jwIHc9rz7yo");
+        // create a new Activity object called dribble and set the state
+        Activty dribble = new Activty();
+        dribble.type = "Dribble";
+        dribble.videoUrl = "https://www.youtube.com/watch?v=jwIHc9rz7yo";
+        // call the record method
+        dribble.record();
     }
 
     public static void passesExercise() {
-        recordActivity("Passes", "https://www.youtube.com/watch?v=jwIHc9rz7yo");
+        Activty passes = new Activty();
+        passes.type = "Passes";
+        passes.videoUrl = "https://www.youtube.com/watch?v=xvaD2AamMpU";
+        passes.record();
     }
 
     public static void runningExercise() {
-        recordActivity("Running", "https://www.youtube.com/watch?v=jwIHc9rz7yo");
+        Activty passes = new Activty();
+        passes.type = "Running";
+        passes.videoUrl = "https://www.youtube.com/watch?v=3ew2m3m5f0M";
+        passes.record();
     }
-
-    public static void recordActivity(String name, String activityUri) {
-        // get the time now
-        LocalTime startTime = LocalTime.now();
-        
-        // load the activity for the user
-        try 
-        {
-            Desktop desktop = java.awt.Desktop.getDesktop();
-            URI oURL = new URI(activityUri);
-            desktop.browse(oURL);
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-        
-        // send some feedback so that the user knows what is going on
-        System.out.println(name + " Activity Launched @ " + startTime.format(DateTimeFormatter.ofPattern("HH:mm:ss")));
-        System.out.print("Type 'Finish' to record activity: ");
-        
-        // wait for the user to finish
-        String userPrompt = Keyboard.readString();
-        
-        if (userPrompt.equals("Finish")) {
-            LocalTime finishTime = LocalTime.now();
-            // calculate training duration
-            double seconds = (double) startTime.until(finishTime, ChronoUnit.SECONDS);
-            // if enough time passed, then record it, otherwise error out
-            if (seconds > 5) {
-                points = (int) (points + (seconds * 2));
-                System.out.println("You got " + points + " points");
-            }
-        }
-    } 
 }
