@@ -7,6 +7,8 @@ public class PastPaper {
 
     int year; // e.g., 2017
 
+    int paper; // e.g., 1, 2
+
     char type; // e.g., 'A' 'B'
 
     // Methods
