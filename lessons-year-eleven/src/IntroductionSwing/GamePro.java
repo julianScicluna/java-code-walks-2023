@@ -40,7 +40,7 @@ public class GamePro {
                     break;
                 }
                 case 3: {
-                    practiceReactionTime();
+                    mouseAccuracyTraining();
                     break;
                 }
                 case 4: {
@@ -69,9 +69,9 @@ public class GamePro {
         System.out.println("Sorry, I did not implement this feature yet. It is in progress.");
     }
 
-    public static void practiceReactionTime() {
-        MouseAccuracyTraining prt = new MouseAccuracyTraining();
-        prt.play();
+    public static void mouseAccuracyTraining() {
+        MouseAccuracyTraining mat = new MouseAccuracyTraining();
+        mat.play();
     }
 
     public static void freePlay() {
